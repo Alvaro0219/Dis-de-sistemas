@@ -1,0 +1,19 @@
+title Registrar reserva
+
+
+Cliente->UI: IngresarEmail
+UI->Controller: Email
+Controller->BD: BuscarCliente (email)
+Controller-->UI: ClienteEncontrado
+Controller->Cliente: MostrarServicios
+Cliente->UI: Servicio
+Cliente->UI: CantPersonas, Datos
+BD->GestorPagos: CalcularSeña
+GestorPagos-->Controller: ImporteSeña
+UI->Cliente: MetodoPago
+Cliente->UI: Opcion
+Controller->GestorPagos: ProcesarPago
+GestorPagos->Controller: PagoProcesado
+Controller->BD: GuardarReserva()
+BD->UI: EnviarVoucher
+

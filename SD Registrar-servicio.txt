@@ -1,0 +1,11 @@
+title Registrar servicio
+
+
+Guia->UI: RegistrarServicio()
+UI->Guia: FormularioRegistro
+Guia->UI: AtributosServicio
+UI->Controller: ValidarAtributos()
+Controller-->Guia: PedirConfirmacion
+Guia->UI: Guardar()
+UI->BD: AlmacenarServicio()
+
