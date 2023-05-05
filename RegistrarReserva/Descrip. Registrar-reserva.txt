@@ -4,12 +4,11 @@ CASO DE USO: Registro de reserva
 3.	Los campos "Nombre" y "Apellido" solo deben contener letras y no deben tener caracteres especiales ni números.
 4.	Los campos "DNI" y "CUIT" solo deben contener números y no deben tener espacios ni otros caracteres.
 5.	Una vez que se han proporcionado los datos, se guarda una nueva instancia de CLIENTE en la memoria.
-6.  El cliente selecciona la opcion "Contratar servicio" en el menu del sitio web
+6.      El cliente selecciona la opcion "Contratar servicio" en el menu del sitio web
 7.	Se muestra una lista de los servicios disponibles para reservar.
 8.	El cliente selecciona un servicio de la lista.
 9.	El cliente ingresa la cantidad de personas que utilizarán el servicio.
 10.	Por cada persona en el grupo, se solicita el nombre, apellido y DNI.
-11.	Se calcula el importe de la seña del servicio en función de la cantidad de personas en el grupo y el precio del servicio.
-12.	Se ofrece al cliente la opción de abonar el importe total o la seña para el servicio.
-13.	Si el cliente elige abonar la seña, se solicitan los detalles de su tarjeta de crédito y se procesa el pago a través de un gateway de tarjeta de crédito.
+11.	Se calcula el importe total del servicio en función de la cantidad de personas en el grupo y el precio del servicio.
+12.	se solicitan los detalles de su tarjeta de crédito y se procesa el pago a través de un gateway de tarjeta de crédito.
 14.	Si el pago es exitoso, se registra la reserva y se envía al cliente un voucher provisorio por correo electrónico.

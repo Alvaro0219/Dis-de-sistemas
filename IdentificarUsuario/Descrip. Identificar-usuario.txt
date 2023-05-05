@@ -1,0 +1,7 @@
+Caso de uso: identificar usuario
+
+1. Se le pide el email al usuario
+2. Se verifica que el email exista
+3. Si la verificacion es verdadera, se le pide la contraseña al usuario
+4. Se verifica que la contraseña exista y coincida con el email
+5. Si la verificacion es verdadera se redirige al usuario al menu de la app

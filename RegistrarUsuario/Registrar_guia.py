@@ -106,5 +106,3 @@ def main ():
 #Entrypoint->función o método que se debe llamar cuando se inicia una aplicación o paquete
 if __name__ == '__main__':
     main()
-
-#Aaaaa

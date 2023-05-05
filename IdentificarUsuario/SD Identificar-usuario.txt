@@ -1,10 +1,12 @@
-title Identificar guia
+title Identificar usuario
+actor Usuario
 
-Guia->UI:correo electronico
+Usuario->UI:correo electronico
 UI->Controller: VerificarCorreoElectronico(correo electronico)
 Controller->Persistencia: VerificarCorreoElectronico(correo electronico)
 Controller<--Persistencia: Correo electrónico existe (o no)
-Guia->UI: Contraseña
+Usuario->UI: Contraseña
 UI->Controller: VerificarContraseña(correo electronico, Contraseña)
 Controller->Persistencia:BuscarContraseña(EMail)
 Controller<--Persistencia:Contraseña
+Controller->UI: Menu
