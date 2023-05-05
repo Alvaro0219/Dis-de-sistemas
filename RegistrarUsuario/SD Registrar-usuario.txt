@@ -1,0 +1,9 @@
+title Registrar usuario
+actor Usuario
+
+Usuario->UI: Registrarse()
+UI->Usuario: MostrarAtributos()
+Usuario->UI: IngresarAtributos
+UI->Controller: ValidarAtributos()
+Controller-->UI: Atributos Validados
+UI->Usuario: Login()

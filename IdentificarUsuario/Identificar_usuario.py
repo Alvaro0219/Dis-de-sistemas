@@ -1,5 +1,5 @@
 
-class Cliente:
+class Usuario:
     def __init__(self, correo, nombre, apellido, dni, cuit, domicilio, telefono, ciudad, pais, contraseña):
         self.correo = correo
         self.nombre = nombre
@@ -15,26 +15,26 @@ class Cliente:
 class Controller:
     def __init__(self):
         #Diccionario: Clave->Email Valor->Objeto de tipo Cliente
-        self.clientes = {
-            "cliente1@gmail.com": Cliente("cliente1@gmail.com", "Juan", "Perez", "12345678", "11111111111", "Calle 1", "555-5555", "Provincia 1", "Argentina", "contraseña1"),
-            "cliente2@gmail.com": Cliente("cliente2@gmail.com", "Ana", "Gomez", "87654321", "22222222222", "Calle 2", "555-5555", "Provincia 2", "Argentina", "contraseña2"),
-            "cliente3@gmail.com": Cliente("cliente3@gmail.com", "Pedro", "Rodriguez", "13579246", "33333333333", "Calle 3", "555-5555", "Provincia 3", "Argentina", "contraseña3")
+        self.usuarios = {
+            "cliente1@gmail.com": Usuario("cliente1@gmail.com", "Juan", "Perez", "12345678", "11111111111", "Calle 1", "555-5555", "Provincia 1", "Argentina", "contraseña1"),
+            "cliente2@gmail.com": Usuario("cliente2@gmail.com", "Ana", "Gomez", "87654321", "22222222222", "Calle 2", "555-5555", "Provincia 2", "Argentina", "contraseña2"),
+            "cliente3@gmail.com": Usuario("cliente3@gmail.com", "Pedro", "Rodriguez", "13579246", "33333333333", "Calle 3", "555-5555", "Provincia 3", "Argentina", "contraseña3")
         }
 
     def verificar_correo(self, correo):
-        return correo in self.clientes
+        return correo in self.usuarios
 
     def verificar_contraseña(self, correo, contraseña):
         #si la contraseña proporcionada por el usuario coincide con la contraseña almacenada en el diccionario de clientes para ese correo.
-        return correo in self.clientes and self.clientes[correo].contraseña == contraseña
+        return correo in self.usuarios and self.usuarios[correo].contraseña == contraseña
 
 class Interfaz:
     def __init__(self):
         self.controller = Controller()
 
     def menu(self, correo):
-        cliente = self.controller.clientes[correo]
-        print(f"Bienvenido al menú de la app {cliente.nombre} {cliente.apellido}")
+        usuario = self.controller.usuarios[correo]
+        print(f"Bienvenido al menú de la app {usuario.nombre} {usuario.apellido}")
 
 def main():
     interfaz = Interfaz()

@@ -1,0 +1,8 @@
+CASO DE USO: Registrar usuario
+
+1.  En la vista de login el usuario selecciona la opcion de registrarse
+2.  Se le muestra al usuario un formulario con todos los atributos de usuario
+3.  Se validan los datos ingresados
+4.  Una vez validados se redirige el usuario a la vista de login para que ingrese con sus credenciales
+
+
