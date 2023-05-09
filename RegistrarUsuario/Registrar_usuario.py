@@ -37,12 +37,13 @@ class Interfaz:
             telefono = input("Ingrese su teléfono: ")
             ciudad = input("Ingrese su ciudad: ")
             pais = input("Ingrese su país: ")
-            contrasena = input("Ingrese su contraseña: ")
-            if not contrasena or len(contrasena) < 8:
-                print("Por favor, ingrese una contraseña de al menos 8 caracteres.")
-                continue
+            while True:
+                contrasena = input("Ingrese su contraseña: ")
+                if not contrasena or len(contrasena) < 8:
+                    print("Por favor, ingrese una contraseña de al menos 8 caracteres.")
+                else:
+                    break
             return Usuario(email, nombre, apellido, dni, cuit, domicilio, telefono, ciudad, pais, contrasena)
-
 """
     Clase que define la lógica de negocio del sistema.
 
@@ -61,10 +62,12 @@ class Controller:
     def validar_usuario(self, usuario):
         #Verificamos que el usuario no este en la BD
         if usuario.email in self.usuarios:
+            print("\n-------------------------------------")
             print("El usuario ya está registrado. Por favor, ingrese un correo electrónico diferente.")
             return False
         #Verificamos que no haya ningun campo vacio
         if any(not getattr(usuario, atributo) for atributo in ["nombre", "apellido", "dni", "cuit", "domicilio", "telefono", "ciudad", "pais"]):
+            print("\n-------------------------------------")
             print("Por favor, complete todos los campos.")
             return False
     
@@ -80,12 +83,14 @@ class Controller:
             print("-------------------------------------")
         else:
             print("Error al registrar el usuario. Por favor, intente nuevamente.")
+            print("-------------------------------------")
             
 
 """
     Punto de entrada del programa. Muestra un menú de opciones al usuario y ejecuta la opción seleccionada.
 """
 def main():
+    #instancias
     controller = Controller()
     interfaz = Interfaz()
     
