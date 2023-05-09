@@ -6,4 +6,4 @@ CASO DE USO: Registro de servicios
 5.	El sistema valida que los datos ingresados estén completos.
 6.	Si los datos están incompletos, el sistema muestra un mensaje de error y vuelve a mostrar el formulario de registro de servicios para que el guía pueda corregir los campos incompletos.
 7.	Si los datos están completos, el sistema almacena el servicio en una base de datos y muestra un mensaje de confirmación al guía indicando que el servicio ha sido registrado con éxito.
-8. El sistema lo redirige al menu
+8.  El sistema lo redirige al menu

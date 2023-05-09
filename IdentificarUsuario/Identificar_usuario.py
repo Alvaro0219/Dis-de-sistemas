@@ -14,7 +14,7 @@ class Usuario:
 
 class Controller:
     def __init__(self):
-        #Diccionario: Clave->Email Valor->Objeto de tipo Cliente
+        #Diccionario: Clave->Email Valor->Objeto de tipo Usuario
         self.usuarios = {
             "cliente1@gmail.com": Usuario("cliente1@gmail.com", "Juan", "Perez", "12345678", "11111111111", "Calle 1", "555-5555", "Provincia 1", "Argentina", "contraseña1"),
             "cliente2@gmail.com": Usuario("cliente2@gmail.com", "Ana", "Gomez", "87654321", "22222222222", "Calle 2", "555-5555", "Provincia 2", "Argentina", "contraseña2"),
@@ -38,12 +38,13 @@ class Interfaz:
 
 def main():
     interfaz = Interfaz()
+    controller = Controller()
     correo = input("Ingrese su correo: ")
-    while not interfaz.controller.verificar_correo(correo):
+    while not controller.verificar_correo(correo):
         print("Correo no registrado, ingrese otro")
         correo = input("Ingrese su correo: ")
     contraseña = input("Ingrese su contraseña: ")
-    while not interfaz.controller.verificar_contraseña(correo, contraseña):
+    while not controller.verificar_contraseña(correo, contraseña):
         print("Contraseña incorrecta, ingrese otra")
         contraseña = input("Ingrese su contraseña: ")
     

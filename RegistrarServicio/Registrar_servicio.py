@@ -1,5 +1,6 @@
+import re
 
-class IU:
+class Interfaz:
     #MENU DEL SITIO WEB
     def mostrar_menu(self):
         menu = """
@@ -23,12 +24,22 @@ class IU:
         titulo = input("Título: ")
         descripcion = input("Descripción: ")
         ubicacion = input("Ubicación: ")
+
         precio = input("Precio: ")
+        while not re.match(r'^\d+(?:\.\d{1,2})?$', precio):
+            print("Error: el precio debe ser un número válido con hasta dos decimales.")
+            precio = input("Precio: ")
+        precio = float(precio)
+
         fecha_hora = input("Fecha y Hora (DD/MM/AAAA HH:MM): ")
+        while not re.match(r'^\d{2}/\d{2}/\d{4}\s\d{2}:\d{2}$', fecha_hora):
+            print("Error: la fecha y hora deben estar en el formato DD/MM/AAAA HH:MM.")
+            fecha_hora = input("Fecha y Hora (DD/MM/AAAA HH:MM): ")
+
         tipo = input("Tipo: ")
 
         # Comprobar que los campos obligatorios no estén en blanco
-        if not titulo or not descripcion or not ubicacion or not precio or not fecha_hora or not tipo:
+        if not titulo or not descripcion or not ubicacion or not tipo:
             print("Error: todos los campos son obligatorios.")
             return self.registrar_servicio()  # Volver a solicitar al usuario que ingrese los datos
 
@@ -43,9 +54,11 @@ class IU:
         if not servicios:
             print("No hay servicios registrados")
         else:
+            print("\n--------------------------------")
+            print("SERVICIOS DISPONIBLES")
             for id_servicio, servicio in servicios.items():
                 print(f"ID: {id_servicio} - Título: {servicio.titulo} - Descripcion: {servicio.descripcion} - Precio: {servicio.precio} - Fecha y hora: {servicio.fecha_hora}")
-
+            print("--------------------------------")
 
 # tipo de dato que representa un servicio y que puede ser utilizado en el programa para almacenar y manipular información sobre un servicio.
 class Servicio:
@@ -63,7 +76,7 @@ class Controller:
         #Diccionario de servicios->BD
         self.servicios = {}
         #Instancia de la clase interfaz
-        self.interfaz = IU()
+        self.interfaz = Interfaz()
 
     def registrar_servicio(self):
         datos = self.interfaz.registrar_servicio()
@@ -84,7 +97,7 @@ class Controller:
 def main():
     #Instancias
     controller = Controller()
-    interfaz = IU()
+    interfaz = Interfaz()
 
     while True:
         opcion = interfaz.mostrar_menu()
