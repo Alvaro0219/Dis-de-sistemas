@@ -1,14 +1,26 @@
 CASO DE USO: Registro de reserva
-1.	El cliente ingresa su correo electrónico y se verifica si ya está registrado.
-2.	Si el cliente no está registrado, se le solicita que proporcione sus datos personales, incluyendo nombre, apellido, DNI, CUIT, domicilio, teléfono, correo electrónico, ciudad y país de residencia.
-3.	Los campos "Nombre" y "Apellido" solo deben contener letras y no deben tener caracteres especiales ni números.
-4.	Los campos "DNI" y "CUIT" solo deben contener números y no deben tener espacios ni otros caracteres.
-5.	Una vez que se han proporcionado los datos, se guarda una nueva instancia de CLIENTE en la memoria.
-6.      El cliente selecciona la opcion "Contratar servicio" en el menu del sitio web
-7.	Se muestra una lista de los servicios disponibles para reservar.
-8.	El cliente selecciona un servicio de la lista.
-9.	El cliente ingresa la cantidad de personas que utilizarán el servicio.
-10.	Por cada persona en el grupo, se solicita el nombre, apellido y DNI.
-11.	Se calcula el importe total del servicio en función de la cantidad de personas en el grupo y el precio del servicio.
-12.	se solicitan los detalles de su tarjeta de crédito y se procesa el pago a través de un gateway de tarjeta de crédito.
-14.	Si el pago es exitoso, se registra la reserva y se envía al cliente un voucher provisorio por correo electrónico.
+1.  El cliente selecciona la opcion "Contratar servicio" en el menu del sitio web
+2.	Se muestra una lista de los servicios disponibles para reservar.
+3.	El cliente selecciona un servicio de la lista.
+4.	El cliente ingresa la cantidad de personas que utilizarán el servicio.
+5.	Por cada persona en el grupo, se solicita el nombre, apellido y DNI.
+6.	Se calcula el importe total del servicio en función de la cantidad de personas en el grupo y el precio del servicio.
+7.	Se le muestran al cliente los datos de una cuenta bancaria para que realice una transferencia, la cual una vez realizada recibira un comprobante por email.
+
+La parte de mostrar datos bancarios solo debe mostrar un cartel con lo siguiente luego de que el usuario seleccione el servicio
+---------------------------
+PRECIO = Precio
+
+CBU = 00000321031290391
+ALIAS= ALIAS.TURISMO
+NRO.CUENTA = 000312312
+
+*Una vez confirmado el pago recibira un comprobante por email
+---------------------------
+
+La parte donde el usuario interactua con la app quiero que este en una clase Interfaz
+Quiero que alla una funcion principal main donde se instancien las demas clases
+En la clase Controller se debe realiar la logica del negocio
+
+completa el siguiente codigo
+s

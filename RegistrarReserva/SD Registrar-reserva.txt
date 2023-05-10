@@ -1,25 +1,11 @@
 title Registrar reserva
 actor Cliente
 
-
-Cliente->UI: correo electronico
-UI->Controller: VerificarCorreoElectronico(correo electronico)
-Controller->BD: VerificarCorreoElectronico(correo electronico)
-Controller<--BD: Correo electrónico existe (o no)
-Cliente->UI: Contraseña
-UI->Controller: VerificarContraseña(correo electronico, Contraseña)
-Controller->BD: BuscarContraseña(EMail)
-Controller<--BD: Contraseña
 Cliente->UI: Contratar servicio()
 Controller->Cliente: MostrarServicios()
 Cliente->UI: Servicio
 Cliente->UI: CantPersonas, Datos
-Controller->GestorPagos:CalcularSeña
-GestorPagos-->Controller: ImporteSeña
-UI->Cliente: MetodoPago
-Cliente->UI: Opcion
-Controller->GestorPagos: ProcesarPago
-GestorPagos->Controller: PagoProcesado
-Controller->BD: GuardarReserva()
-
-Controller->Cliente:EnviarVoucher
+Controller->GestorPagos:CalcularTotal
+GestorPagos-->Controller: Total
+Controller->Cliente: MostrarTotal
+UI->Cliente: DatosBancarios
