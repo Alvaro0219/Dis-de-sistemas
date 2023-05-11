@@ -74,7 +74,7 @@ class Interfaz:
             datos_personas.append({"nombre": nombre, "apellido": apellido, "dni": dni})
         return datos_personas
     
-    def mostrar_datos_bancarios(self, servicio, total):
+    def mostrar_datos_bancarios(self,total):
         print("Estos son los datos bancarios para realizar la transferencia:")
         print("---------------------------")
         print(f"PRECIO = ${total}")
@@ -98,7 +98,7 @@ def main():
         cant_personas = interfaz.ingresar_cantidad_personas()
         datos_personas = interfaz.ingresar_datos_personas(cant_personas)
         total = gestor.calcular_total(servicio, cant_personas)
-        interfaz.mostrar_datos_bancarios(servicio, total)
+        interfaz.mostrar_datos_bancarios(total)
     elif opcion==2:
         print("Gracias por utilizar nuestro servicio")
     else:

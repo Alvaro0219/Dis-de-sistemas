@@ -7,20 +7,3 @@ CASO DE USO: Registro de reserva
 6.	Se calcula el importe total del servicio en función de la cantidad de personas en el grupo y el precio del servicio.
 7.	Se le muestran al cliente los datos de una cuenta bancaria para que realice una transferencia, la cual una vez realizada recibira un comprobante por email.
 
-La parte de mostrar datos bancarios solo debe mostrar un cartel con lo siguiente luego de que el usuario seleccione el servicio
----------------------------
-PRECIO = Precio
-
-CBU = 00000321031290391
-ALIAS= ALIAS.TURISMO
-NRO.CUENTA = 000312312
-
-*Una vez confirmado el pago recibira un comprobante por email
----------------------------
-
-La parte donde el usuario interactua con la app quiero que este en una clase Interfaz
-Quiero que alla una funcion principal main donde se instancien las demas clases
-En la clase Controller se debe realiar la logica del negocio
-
-completa el siguiente codigo
-s
