@@ -45,7 +45,7 @@ class Interfaz:
                     break
             return Usuario(email, nombre, apellido, dni, cuit, domicilio, telefono, ciudad, pais, contrasena)
 """
-    Clase que define la lógica de negocio del sistema.
+    Clase Controller
 
     Atributos:
     - usuarios (dict): diccionario que almacena a los usuarios registrados en el sistema. Las claves son los correos electrónicos de los usuarios, y los valores son objetos Usuario.
