@@ -1,5 +1,17 @@
 import re
 
+# tipo de dato que representa un servicio y que puede ser utilizado en el programa para almacenar y manipular información sobre un servicio.
+class Servicio:
+    def __init__(self, datos):
+        #Metodo constructor->inicializa los valores de una instancia
+        self.titulo = datos["titulo"]
+        self.descripcion = datos["descripcion"]
+        self.ubicacion = datos["ubicacion"]
+        self.precio = datos["precio"]
+        self.fecha_hora = datos["fecha_hora"]
+        self.tipo = datos["tipo"]
+
+        
 class Interfaz:
     #MENU DEL SITIO WEB
     def mostrar_menu(self):
@@ -60,16 +72,7 @@ class Interfaz:
                 print(f"ID: {id_servicio} - Título: {servicio.titulo} - Descripcion: {servicio.descripcion} - Precio: {servicio.precio} - Fecha y hora: {servicio.fecha_hora}")
             print("--------------------------------")
 
-# tipo de dato que representa un servicio y que puede ser utilizado en el programa para almacenar y manipular información sobre un servicio.
-class Servicio:
-    def __init__(self, datos):
-        #Metodo constructor->inicializa los valores de una instancia
-        self.titulo = datos["titulo"]
-        self.descripcion = datos["descripcion"]
-        self.ubicacion = datos["ubicacion"]
-        self.precio = datos["precio"]
-        self.fecha_hora = datos["fecha_hora"]
-        self.tipo = datos["tipo"]
+
 
 class Controller:
     def __init__(self):
