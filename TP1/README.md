@@ -16,11 +16,6 @@ BENEFICIOS:
 3.	Acceso fácil y rápido de la información: disponibilidad de la información en formato digital. 
 4.	Registro de actividades a lo largo del proceso: permite registrar quien realiza cada actividad y cuando.
 
-FUNCIONES:
-1.	Registro de productos y especificaciones técnicas
-2.	Planificación y programación de las etapas de fabricación
-3.	Registro de controles realizados en cada etapa, con resultados y fecha
-
 **REQUERIMIENTOS**
 
 REQUERIMIENTOS FUNCIONALES
