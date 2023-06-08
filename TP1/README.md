@@ -5,10 +5,9 @@ SITUACION PROBLEMÁTICA: la situación problemática se basa en la falta de un s
 POSIBLE SOLUCION: implementar un sistema de gestión de la calidad o gestión de la producción que permita realizar un seguimiento detallado de cada producto a lo largo de su ciclo de fabricación.
 
 CARACTERISTICAS DEL SISTEMA:
-1. 	Planificación y programación: gestionar el plan de producción
-2.	Gestión de órdenes de trabajo: seguimiento del trabajo, desde el inicio hasta la finalización permitiendo asignar tareas
-3.	Registro y seguimiento de datos: resultado de controles, tiempos de producción, consumos de materiales.
-4.	Control de calidad: realizar inspecciones y controles y registrar resultados asegurando el cumplimiento.
+1. 	Planificación y programación: gestionar el plan de control de calidad
+2.	Registro y seguimiento de datos: resultado de controles, tiempos de producción, consumos de materiales.
+3.	Control de calidad: realizar inspecciones y controles y registrar resultados asegurando el cumplimiento.
 
 BENEFICIOS:
 1.	Centralización de la información: toda la información almacenada en un único sistema.
@@ -19,11 +18,10 @@ BENEFICIOS:
 **REQUERIMIENTOS**
 
 REQUERIMIENTOS FUNCIONALES
-1.	Registro de productos: Funcionalidad para ingresar y almacenar información general de los productos, como nombre, código, descripción y categoría.
-2.	Registro de especificaciones: Capacidad para ingresar y almacenar las especificaciones técnicas detalladas de cada producto, incluyendo medidas, materiales, características específicas, requisitos.
-3.	Registro de etapas de producción: planificación detallada de las etapas de fabricación, asignando recursos, tiempos estimados y secuencia de actividades.
-4.	Registro y seguimiento de datos: registrar y almacenar los datos relevantes de cada etapa de fabricación, como resultados de controles, tiempos de producción y consumos de materiales.
-5.	Registro de productos terminados: registrar la información específica de los productos terminados, como fecha de finalización, número de lote, entre otros.
+1. Registro de productos y especificaciones técnicas: El administrador del sistema puede ingresar los datos del producto, incluyendo su nombre, código y descripción, junto con las especificaciones técnicas correspondientes. Esto generará una plantilla de especificaciones técnicas para el producto.
+2. Seguimiento de resultados de especificaciones técnicas: El controlador, a medida que se fabrica el producto, puede agregar los resultados de cada especificación técnica en base a la plantilla generada. Estos resultados pueden ser numéricos, cualitativos o de cualquier otro tipo según las especificaciones establecidas.
+3. Validación de cumplimiento de estándares: El sistema debe contar con funcionalidades para comparar los resultados de las especificaciones técnicas con los estándares establecidos. Si alguna especificación no cumple con los estándares, el sistema debe identificarla y devolver una notificación o alerta para su revisión.
+4.	Registro de productos terminados: Una vez que se cumplan todas las especificaciones el controlador debera poner el producto en estado de terminado y el mismo se debe almacenar en el stock.
 
 REQUERIMIENTOS NO FUNCIONALES
 1.	Usabilidad: El sistema debe ser fácil de usar y comprender para los usuarios, con una interfaz intuitiva que requiera un mínimo de capacitación.
