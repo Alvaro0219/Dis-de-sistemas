@@ -18,8 +18,8 @@ BENEFICIOS:
 **REQUERIMIENTOS**
 
 REQUERIMIENTOS FUNCIONALES
-1. Registro de productos y especificaciones técnicas: El administrador del sistema puede ingresar los datos del producto, incluyendo su nombre, código y descripción, junto con las especificaciones técnicas correspondientes. Esto generará una plantilla de especificaciones técnicas para el producto.
-2. Seguimiento de resultados de especificaciones técnicas: El controlador, a medida que se fabrica el producto, puede agregar los resultados de cada especificación técnica en base a la plantilla generada. Estos resultados pueden ser numéricos, cualitativos o de cualquier otro tipo según las especificaciones establecidas.
+1. Registro de productos y especificaciones técnicas: El administrador del sistema puede ingresar los datos del producto, incluyendo su nombre, código y descripción, junto con las especificaciones técnicas correspondientes. Esto generará una planilla de especificaciones técnicas para el producto.
+2. Seguimiento de resultados de especificaciones técnicas: El controlador, a medida que se fabrica el producto, puede agregar los resultados de cada especificación técnica en base a la planilla generada. Estos resultados pueden ser numéricos, cualitativos o de cualquier otro tipo según las especificaciones establecidas.
 3. Validación de cumplimiento de estándares: El sistema debe contar con funcionalidades para comparar los resultados de las especificaciones técnicas con los estándares establecidos. Si alguna especificación no cumple con los estándares, el sistema debe identificarla y devolver una notificación o alerta para su revisión.
 4.	Registro de productos terminados: Una vez que se cumplan todas las especificaciones el controlador debera poner el producto en estado de terminado y el mismo se debe almacenar en el stock.
 
