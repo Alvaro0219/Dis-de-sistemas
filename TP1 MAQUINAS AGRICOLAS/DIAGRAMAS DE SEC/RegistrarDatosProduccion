@@ -1,0 +1,8 @@
+title REGISTRAR DATOS DE PRODUCCION
+
+Administrador->UI: Producto
+UI-->Administrador: Producto
+Administrador->UI: Datos_de_produccion()
+UI-->Administrador: Formulario_especificaciones
+Administrador->UI: Completar_datos()
+UI->Persistencia: Guardar_datos()

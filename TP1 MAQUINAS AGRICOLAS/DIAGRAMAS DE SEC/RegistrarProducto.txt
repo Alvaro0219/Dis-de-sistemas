@@ -1,0 +1,10 @@
+title REGISTRAR PRODUCTO
+
+Administrador->UI: Productos()
+Administrador->UI: Agregar_producto()
+UI-->Administrador: FormularioRegistro
+Administrador->UI: AtributosProducto
+UI->Controller: Validar_atributos()
+Controller-->Administrador: Pedir_confirmacion()
+Administrador->UI: Guardar()
+UI->Persistencia: Almacenar_Producto()

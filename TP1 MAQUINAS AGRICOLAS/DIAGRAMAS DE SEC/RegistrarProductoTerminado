@@ -1,0 +1,8 @@
+title REGISTRAR PRODUCTO TERMINADO
+
+Administrador->UI: Stock
+Administrador->UI: Agregar_producto()
+Administrador->UI: Datos_de_produccion()
+Administrador->UI: Datos_producto
+UI->Controller: Validar_datos()
+UI->Persistencia: Guardar_datos()
