@@ -27,3 +27,6 @@ PERSONAL DEL BOX
 2 -> Al elegir un turno, el sistema debe mostrar segun tenga o no los turnos del usuario/paciente
 2.1 -> Si el paciente tiene turno el sistema debe mostrar los detalles del mismo para que el personal rediriga al paciente
 2.2 -> Si el paciente no tiene turno el sistema debe permitir generar un nuevo turno
+
+<h2>DESCRIPCION DE ARQUITECTURA</h2>
+![image](https://github.com/Alvaro0219/Dis-de-sistemas/assets/112023160/1d8efd99-ef31-4d66-8e0f-45d33607668e)
