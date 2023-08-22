@@ -18,7 +18,7 @@
 
 <h2>FLUJO DE FUNCIONAMIENTO</h2>
 USUARIO
-1 -> EL paciente accede a la UI dispuesta en una tablet para tomar un turno (consulta con el box)
+1 -> EL paciente accede a la UI dispuesta en una tablet para tomar un turno (consulta con el box) o para visualizar los turnos a su nombre
 <br>
 2 -> El sistema emite un ticket al paciente con el codigo de turno y el nro de box
 <br>
@@ -27,7 +27,7 @@ USUARIO
 PERSONAL DEL BOX
 1 -> El sistema debe brindarle al personal una lista de todos los turnos en espera segun orden de llegada
 <br>
-2 -> Al elegir un turno, el sistema debe mostrar segun tenga o no los turnos del usuario/paciente
+2 -> El personal elige un turno segun orden de llegada o puede atender un turno en especifico 
 <br>
 2.1 -> Si el paciente tiene turno el sistema debe mostrar los detalles del mismo para que el personal rediriga al paciente
 <br>
