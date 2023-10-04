@@ -1,3 +1,2 @@
 # Diseño de sistemas
-AAA
 

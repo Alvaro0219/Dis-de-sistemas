@@ -20,7 +20,7 @@
 <h3>USUARIO</h3>
 1 -> EL paciente accede a la UI dispuesta en una tablet para tomar un turno (consulta con el box) o para visualizar los turnos a su nombre
 <br>
-2 -> El sistema emite un ticket al paciente con el codigo de turno y el nro de box
+2 -> Si el paciente decide registrar un turno el sistema emite un ticket al paciente con el codigo de turno y el nro de box para que en el mismo le tomen los datos
 <br>
 3 -> El sistema muestra en una UI visible los turnos, mostrando: numero de box, codigo de turno y apellido del paciente
 <br>
