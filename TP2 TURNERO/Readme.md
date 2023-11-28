@@ -35,3 +35,5 @@
 
 <h2>DESCRIPCION DE ARQUITECTURA</h2>
 ![image](https://github.com/Alvaro0219/Dis-de-sistemas/assets/112023160/1d8efd99-ef31-4d66-8e0f-45d33607668e)
+<br>
+Para el sistema de gestion de turnos elegimos un tipo de arquitectura en capas ya que la misma nos ofrece claridad, mantenibilidad, escalabilidad, flexibilidad,  y control .
